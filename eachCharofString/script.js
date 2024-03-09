@@ -3,19 +3,12 @@
 // using for loop
 function countChar(args) {
     let output = {};
-    let t1 = performance.now()
     for (let i = 0; i < args.length; i++) {
         let charVal = args[i].toLowerCase()
         if (/[a-z0-9]/.test(charVal)) {
-            if (output[charVal]) {
-                output[charVal]++
-            } else {
-                output[charVal] = 1
-            }
+            output[charVal] = ++output[charVal] || 1
         }
     }
-    let t2 = performance.now()
-     console.log(t2-t1 / 1000)
     return output
 }
 
