@@ -1,17 +1,43 @@
 // count the each character of a string
 
+// using for loop
 function countChar(args) {
     let output = {};
+    let t1 = performance.now()
     for (let i = 0; i < args.length; i++) {
-
-        if (output[args.charAt(i)]) {
-            output[args.charAt(i)]++
-        } else {
-            output[args.charAt(i)] = 1
+        let charVal = args[i].toLowerCase()
+        if (/[a-z0-9]/.test(charVal)) {
+            if (output[charVal]) {
+                output[charVal]++
+            } else {
+                output[charVal] = 1
+            }
         }
     }
+    let t2 = performance.now()
+     console.log(t2-t1 / 1000)
     return output
 }
 
-let result = countChar("AAAgsadhkjfsahjf89-023");
+// using for of loop
+
+// function countChar(args) {
+//     let output = {};
+//     let t1 = performance.now()
+//     for (var char of args) {
+//         let changeToLowercase = char.toLowerCase();
+//          if (/[a-z0-9]/.test(changeToLowercase)) { //used to remove the space
+//             if (output[changeToLowercase]) {
+//                 output[changeToLowercase]++
+//             } else {
+//                 output[changeToLowercase] = 1
+//             }
+//         }
+//     }
+//     let t2 = performance.now()
+//     console.log(t2-t1 / 1000)
+//     return output;
+// }
+
+let result = countChar("AAAgaaasad hkjfsahjf89-023");
 console.log(result)
