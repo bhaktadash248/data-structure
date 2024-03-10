@@ -11,9 +11,11 @@ Depending on a certain condition, the window either increases or closes( and a n
 
 Very useful for keeping track of a subset of data in an array/string etc.
 
-****
+
 
 **Divide and conquer**
+
+****
 
 1. Write a anagram programme using javascript
 2. Write a function which accepts a sorted arrat of intigers. The function should find the first pair where the sum is zero. Return an array that includesboth values that sum to zero or undefined if a pair does not exists
