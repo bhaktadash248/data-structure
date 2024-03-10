@@ -12,8 +12,11 @@ Depending on a certain condition, the window either increases or closes( and a n
 Very useful for keeping track of a subset of data in an array/string etc.
 
 
-
 **Divide and conquer**
+
+This pattern invloves dividing a data set into smaller chunks and then repeating a process with a subset of data.
+
+This pattern can termendously decrese time complexity
 
 *****
 
