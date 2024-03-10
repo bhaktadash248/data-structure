@@ -16,7 +16,6 @@ function countChar(args) {
 
 // function countChar(args) {
 //     let output = {};
-//     let t1 = performance.now()
 //     for (var char of args) {
 //         let changeToLowercase = char.toLowerCase();
 //          if (/[a-z0-9]/.test(changeToLowercase)) { //used to remove the space
@@ -27,8 +26,6 @@ function countChar(args) {
 //             }
 //         }
 //     }
-//     let t2 = performance.now()
-//     console.log(t2-t1 / 1000)
 //     return output;
 // }
 
