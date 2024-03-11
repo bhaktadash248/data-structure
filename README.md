@@ -27,3 +27,4 @@ This pattern can termendously decrese time complexity
 5. Given a sorted array of integers, write a function called search, that accepts a value and returns the index where the value 
 passed to the function is located. 
 If the value is not found, return -1
+6. write factorial of a number using recusively
