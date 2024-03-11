@@ -18,6 +18,12 @@ This pattern invloves dividing a data set into smaller chunks and then repeating
 
 This pattern can termendously decrese time complexity
 
+**recursive function**
+
+A recursive function is a function that calls itself somewhere within the body of the function. 
+
+In recursive a base case(the condition when the recursion ends) is required or else we ll get an maximum callstack size exceeded error. i.e. stack overflow.
+
 *****
 
 1. Write a anagram programme using javascript
