@@ -34,3 +34,5 @@ In recursive a base case(the condition when the recursion ends) is required or e
 passed to the function is located. 
 If the value is not found, return -1
 6. write factorial of a number using recusively
+
+7. Write a function called linearSearch which accepts an array and a value, and returns the index at which the value exists. If the value does not exist in the array, return -1.
