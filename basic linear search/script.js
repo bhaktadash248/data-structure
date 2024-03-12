@@ -6,7 +6,7 @@
 function linearSearch(arg, num){
     for(let i = 0; i< arg.length; i++){
         if(arg[i] == num){
-            return ++i;
+            return i;
         }
     }return -1
   }
