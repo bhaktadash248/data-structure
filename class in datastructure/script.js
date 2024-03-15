@@ -47,3 +47,10 @@ let student2 = new Student("Bhakta", "Dash")
 console.log(student2.fullName()) 
 
 // output: full name of the student is Bhakta Dash
+
+/* Static keyword defines a static method of a class. static methods are called without 
+instantiating their and cannot  be called through a call instance.
+Static methods are used to create the utility functions of an application 
+i.e. I can able to call the static method only using the classname with the static method name.
+Student.fullname() if full is defined with the static keyword only
+*/
