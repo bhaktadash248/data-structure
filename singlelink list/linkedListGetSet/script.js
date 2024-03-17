@@ -1,45 +1,21 @@
-/*
-    Link list contains a head tail and length
-    Linked lists consists of nodes and each node has a value and a pointer to another node or null i.e. after the last node its null
-    Here we can able to access it via nodes with a next pointer
-    Random access is not allowed
-    it does not have indexes.
-*/
+// linked list using get and set
 
-// example
-
-class Nodes {
+class Node {
     constructor(val) {
         this.val = val;
         this.next = null
     }
 }
 
-var first = new Nodes("Hi")
-first.next = new Nodes("there")
-
-/* output
-
-Nodes{
-    "val": "Hi",
-    "next": {
-        "val": "there",
-        "next": null
-    }
-}
-*/
-
-// create single link list for push
-
-class SingleLinkList{
-    constructor(){
+class SingleLinkList {
+    constructor() {
         this.head = null;
         this.tail = null;
         this.length = 0
     }
 
     push(val){
-        var current = new Nodes(val)
+        var current = new Node(val)
         if(!this.head){
             this.head = current;
             this.tail = this.head;
@@ -66,6 +42,28 @@ class SingleLinkList{
             this.head = this.tail = null
         }
         return currentVal;
+    }
+
+    get(index) {
+        if(index < 0 ||index >= this.length){
+            return null;
+        }
+        var counter = 0;
+        var current = this.head;
+        while(counter !== index){
+            counter++;
+            current = current.next;
+        }
+        return current
+    }
+
+    set(index, val){
+        var foundNode = this.get(index);
+        if(foundNode){
+            foundNode.val = val
+            return true;
+        }
+        return false
     }
 }
 
