@@ -2,7 +2,7 @@
 
 function selectioSort(arg) {
     for (let i = 0; i < arg.length; i++) {
-        for (j = i + 1; j < arg.length; j++) {
+        for (var j = i + 1; j < arg.length; j++) {
             var lowest = i
             if (arg[i] > arg[j]) {
                 lowest = j
